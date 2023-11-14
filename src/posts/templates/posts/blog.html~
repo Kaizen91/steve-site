@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Blog Posts</h1>
+<h2>Topics</h2>
+
+<div class="topics">
+{% for topic in topic_list %}
+<ul>
+	<li><a href={% url "category" topic.name %}>{{ topic.name }}</a></li>
+</ul>
+{% endfor %}
+</div>
+
+<h2>Posts</h2>
+<div class="gen-list">
+{% if post_list %}
+    <ul>
+    {% for post in post_list %}
+    <li>{{ post.date.year }}, {{ post.date.month }}, {{ post.date.day }} - <a href={% url "posts:post" post.id %}>{{ post.title}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No posts are available.</p>
+{% endif %}
+</div>
+{% endblock content %}

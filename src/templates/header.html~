@@ -1,0 +1,6 @@
+<nav class="container">
+	<a href={% url 'index' %}>Home</a>
+	<a href={% url 'resume' %}>Resume</a>
+	<a href={% url 'posts:blog' %}>Blog</a>
+	<a href={% url 'contact' %}>Contact</a>
+</nav>

@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 id="stephen-lang-resume">Stephen Lang Resume</h2>
+<p><strong>Email</strong>: stephenlang91@gmail.com<br />
+<strong>Website</strong>: <a href="https://stevelang.xyz"
+class="uri">https://stevelang.xyz</a><br />
+<strong>GitHub</strong>: <a href="https://github.com/Kaizen91"
+class="uri">https://github.com/Kaizen91</a> <strong>LinkedIn</strong>:
+<a href="https://www.linkedin.com/in/stephen-lang-canada/"
+class="uri">https://www.linkedin.com/in/stephen-lang-canada/</a></p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Technical Skills</strong></th>
+<th><strong>Non Technical Skills</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Google Cloud Platform</td>
+<td>Spanish / English</td>
+</tr>
+<tr class="even">
+<td>SQL (ETL / ELT)</td>
+<td>Project Management</td>
+</tr>
+<tr class="odd">
+<td>Python (PySpark, Pandas, Django), R, C</td>
+<td>Ability to train both technical and non technical audiences</td>
+</tr>
+<tr class="even">
+<td>Solution Architecture</td>
+<td>MS Office</td>
+</tr>
+</tbody>
+</table>
+<h2 id="work-experience">Work Experience</h2>
+<p><strong>Data Engineer Manager</strong> Scotiabank 11.2020 -
+10.2023</p>
+<p>I managed a team of engineers working across 4 countries building ELT
+pipelines to standardize the bank’s data which ultimately will lead to
+millions in saved dollars due to avoiding fines and insights into
+customers<br />
+I documented and registered dozens of systems in our Data Governance
+tool (Collibra)<br />
+Provided training on GCP, and cloud computing in general, to several
+teams and gave a presentation to senior management in preparation for
+the bank to move to GCP</p>
+<p><strong>Professional Services Consultant</strong> Delbridge Solutions
+03.2019 - 11.2020</p>
+<p>Built ETL processes using SQL stored procedures, Bash Scripts, APIs,
+and mapping tools.<br />
+Consolidations, Capex planning, HR planning, OPEX, COGS, and Revenue
+Planning<br />
+Implementing and Integrating VENA Financial Budgeting Software.<br />
+Training Power Users on OLAP Technologies.<br />
+Designing Reporting and Budgeting Workflows, and Designing Solution
+Architecture Addressing Security and Data permissions.<br />
+Wrote Python scripts to automate repetitive processes and increase
+efficiency<br />
+Leveraging data base connections and Excel to build custom Business
+Intelligence reports</p>
+<p><strong>Application Specialist</strong> Ceridian 06.2017 -
+03.2019</p>
+<p>Complex Problem solving related to both payroll law and Data
+analysis<br />
+Running SQL queries and scripts to investigate and solve issues<br />
+Developing BI Reporting<br />
+Bridge between the client and product management team ensuring any
+product enhancements are built into software<br />
+Solving technical issues related to processing payroll for multimillion
+dollar clients<br />
+Creating Training documentation<br />
+Configuring taxation for clients with employees in multiple states</p>
+<h2 id="certifications">Certifications</h2>
+<ul>
+<li>Google Cloud Certified Professional Cloud Architect</li>
+<li>Google Cloud Certified Associate Cloud Engineer</li>
+</ul>
+<h2 id="education">Education</h2>
+<h4 id="carleton-university-2011---2015">Carleton University 2011 -
+2015</h4>
+<ul>
+<li>Bachelor’s Degree, International Business, Finance and Banking
+Concentration Graduated with Honors</li>
+</ul>
+{% endblock content %}
