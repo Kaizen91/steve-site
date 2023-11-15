@@ -1,15 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Projects</h1>
-<div class="gen-list">
+<div class="pagecontainer">
 {% if project_list %}
     {% for project in project_list %}
+    <container>
     <h4>{{ project.title }}</h4>
-    <a href={{ project.git_repo}}>{{ project.title }} - git repo </a>
+    <div>
     <a href={{ project.jupyter_notebook}}>{{ project.title }} - jupyter notebook</a>
+    </div>
+    <div>
+    <a href={{ project.git_repo}}>{{ project.title }} - git repo </a>
+    </div>
     <div>
 	    <p>{{ project.description }}</p>
     </div>
+    </container>
     {% endfor %}
 {% else %}
     <p>No projects are available.</p>

@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="container">
 <h2 id="stephen-lang-resume">Stephen Lang Resume</h2>
-<p><strong>Email</strong>: stephenlang91@gmail.com<br />
-<strong>Website</strong>: <a href="https://stevelang.xyz"
-class="uri">https://stevelang.xyz</a><br />
-<strong>GitHub</strong>: <a href="https://github.com/Kaizen91"
+<p><strong>Email</strong>: <a href="mailto:stephenlang91@gmail.com"
+class="email">stephenlang91@gmail.com</a> <strong>Website</strong>: <a
+href="https://stevelang.xyz" class="uri">https://stevelang.xyz</a></p>
+<p><strong>GitHub</strong>: <a href="https://github.com/Kaizen91"
 class="uri">https://github.com/Kaizen91</a> <strong>LinkedIn</strong>:
 <a href="https://www.linkedin.com/in/stephen-lang-canada/"
 class="uri">https://www.linkedin.com/in/stephen-lang-canada/</a></p>
@@ -25,8 +26,8 @@ class="uri">https://www.linkedin.com/in/stephen-lang-canada/</a></p>
 <td>Spanish / English</td>
 </tr>
 <tr class="even">
-<td>SQL (ETL / ELT)</td>
-<td>Project Management</td>
+<td>SQL (ETL / ELT), NoSQL</td>
+<td>Project Management (Kanban, Aglie)</td>
 </tr>
 <tr class="odd">
 <td>Python (PySpark, Pandas, Django), R, C</td>
@@ -35,6 +36,18 @@ class="uri">https://www.linkedin.com/in/stephen-lang-canada/</a></p>
 <tr class="even">
 <td>Solution Architecture</td>
 <td>MS Office</td>
+</tr>
+<tr class="odd">
+<td>Git</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Linux</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Continuous Integration / Continuous Deployment</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -56,25 +69,25 @@ the bank to move to GCP</p>
 and mapping tools.<br />
 Consolidations, Capex planning, HR planning, OPEX, COGS, and Revenue
 Planning<br />
-Implementing and Integrating VENA Financial Budgeting Software.<br />
-Training Power Users on OLAP Technologies.<br />
-Designing Reporting and Budgeting Workflows, and Designing Solution
-Architecture Addressing Security and Data permissions.<br />
+Implementing and integrating VENA Financial Budgeting Software.<br />
+Training power users on OLAP technologies.<br />
+Designing reporting and budgeting workflows, and designing Solution
+Architecture Addressing security and data permissions.<br />
 Wrote Python scripts to automate repetitive processes and increase
 efficiency<br />
 Leveraging data base connections and Excel to build custom Business
 Intelligence reports</p>
 <p><strong>Application Specialist</strong> Ceridian 06.2017 -
 03.2019</p>
-<p>Complex Problem solving related to both payroll law and Data
+<p>Complex problem solving related to both payroll law and data
 analysis<br />
 Running SQL queries and scripts to investigate and solve issues<br />
-Developing BI Reporting<br />
+Developing BI reporting<br />
 Bridge between the client and product management team ensuring any
 product enhancements are built into software<br />
 Solving technical issues related to processing payroll for multimillion
 dollar clients<br />
-Creating Training documentation<br />
+Creating training documentation<br />
 Configuring taxation for clients with employees in multiple states</p>
 <h2 id="certifications">Certifications</h2>
 <ul>
@@ -88,4 +101,5 @@ Configuring taxation for clients with employees in multiple states</p>
 <li>Bachelor’s Degree, International Business, Finance and Banking
 Concentration Graduated with Honors</li>
 </ul>
+</div>
 {% endblock content %}

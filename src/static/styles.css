@@ -3,7 +3,7 @@ body {
 	color: #ddd;
 }
 
-.container {
+.navbar {
 	display: flex;
 	gap: .1%;
 }
@@ -103,7 +103,15 @@ strong {
 	margin-left: 15%;
 	}
 
-.post {
-	margin-right: 15%;
+.container {
 	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.container  h4 {
+	text-align: left;
+}
+
+.resume-links {
+	text-align: center;
 }
