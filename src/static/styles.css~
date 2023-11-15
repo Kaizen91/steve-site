@@ -14,10 +14,10 @@ a {
 }
 
 nav > a {
-	background: #66FF99;
-	color: black;
 	padding: 10px;
-	text-decoration: none;
+	/*text-decoration: none;
+	background: #66FF99;
+	color: black;*/
 }
 
 h1, h2, h3, h4 {
@@ -102,3 +102,8 @@ strong {
 	margin-right: 15%;
 	margin-left: 15%;
 	}
+
+.post {
+	margin-right: 15%;
+	margin-left: 15%;
+}

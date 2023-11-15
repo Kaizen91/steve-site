@@ -15,7 +15,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-qi-)e-10dhj%6_
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['localhost', 'stevelang.xyz', 'www.stevelang.xyz']
+ALLOWED_HOSTS = ['localhost', 'stevelang.xyz', 'www.stevelang.xyz', '127.0.0.1' ]
 
 
 # Application definition
@@ -24,7 +24,8 @@ INSTALLED_APPS = [
 
     # site apps
     'posts.apps.PostsConfig',
-    #third party apps
+    'projects.apps.ProjectsConfig',
+    # third party apps
     'ckeditor',
     # standard apps
     'django.contrib.admin',
@@ -69,24 +70,24 @@ WSGI_APPLICATION = 'steve_site.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-# if DEBUG is True:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
-# else:
-DATABASES = {
+if DEBUG is True:
+    DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'stevesite',
-            'USER': 'steve',
-            'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
-            'PORT': '',
-            }
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
         }
-
+    }
+else:
+    DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': 'stevesite',
+                'USER': 'steve',
+                'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+                'PORT': '',
+                }
+            }
+ 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 AUTH_PASSWORD_VALIDATORS = [
