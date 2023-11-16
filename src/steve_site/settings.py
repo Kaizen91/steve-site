@@ -1,19 +1,28 @@
 from pathlib import Path
 import os
+import environ
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve(strict=True).parent.parent 
 
+
+env = environ.Env(
+        DJANGO_SECRET_KEY=(str, 'django-insecure-qi-)e-10dhj%6_5qzb(cq-%(7+vw*3k#a#ndtjna$+qj=42y&4')
+        )
+
+# Take environment variables from .env file
+environ.Env.read_env(os.path.join(BASE_DIR,'.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-qi-)e-10dhj%6_5qzb(cq-%(7+vw*3k#a#ndtjna$+qj=42y&4')
+SECRET_KEY = env('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = env('DJANGO_DEBUG') != 'False'
 
 ALLOWED_HOSTS = ['localhost', 'stevelang.xyz', 'www.stevelang.xyz', '127.0.0.1' ]
 
@@ -83,7 +92,7 @@ else:
                 'ENGINE': 'django.db.backends.postgresql_psycopg2',
                 'NAME': 'stevesite',
                 'USER': 'steve',
-                'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+                'PASSWORD': env('POSTGRES_PASSWORD'),
                 'PORT': '',
                 }
             }
