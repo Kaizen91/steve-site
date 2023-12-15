@@ -7,11 +7,14 @@
     <container>
     <h4>{{ project.title }}</h4>
     <div>
-    <a href={{ project.jupyter_notebook}}>{{ project.title }} - jupyter notebook</a>
-    </div>
-    <div>
     <a href={{ project.git_repo}}>{{ project.title }} - git repo </a>
     </div>
+    {% if project.jupyter_notebook != "" %}
+    <div>
+    <a href={{ project.jupyter_notebook}}>{{ project.title }} - jupyter notebook</a>
+    </div>
+    {% else %}
+    {% endif %}
     <div>
 	    <p>{{ project.description }}</p>
     </div>

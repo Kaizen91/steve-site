@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Projects</h1>
-<div class="pagecontainer">
+<div class="container">
 {% if project_list %}
     {% for project in project_list %}
     <container>
