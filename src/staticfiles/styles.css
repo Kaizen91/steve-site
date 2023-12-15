@@ -104,7 +104,14 @@ strong {
 	}
 
 .container {
-	margin-right: 15%;
 	margin-left: 15%;
+	margin-right: 15%;
 }
 
+.container  h4 {
+	text-align: left;
+}
+
+.resume-links {
+	text-align: center;
+}
