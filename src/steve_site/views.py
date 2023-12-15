@@ -3,7 +3,7 @@ from posts.models import Post
 
 
 def index(request):
-    latest_post_list = Post.objects.order_by("-date")[:5]
+    latest_post_list = Post.objects.order_by("date")[:5]
     context = {
             "latest_post_list": latest_post_list,
             }

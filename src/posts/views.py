@@ -7,7 +7,7 @@ def index(request, category=None):
     if category:
         post_list = Post.objects.filter(topics__name=category)
     else:
-        post_list = Post.objects.all()
+        post_list = Post.objects.all().order_by("date")
     topic_list = Topic.objects.all()
     context = {
             "post_list": post_list,
