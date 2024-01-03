@@ -2,7 +2,6 @@
 {% block content %}
 <div class="container">
 <h2 id="stephen-lang-resume">Stephen Lang Resume</h2>
-<div class="resume-links">
 <p><strong>Email</strong>: <a href="mailto:stephenlang91@gmail.com"
 class="email">stephenlang91@gmail.com</a> <strong>Website</strong>: <a
 href="https://stevelang.xyz" class="uri">https://stevelang.xyz</a></p>
@@ -10,45 +9,50 @@ href="https://stevelang.xyz" class="uri">https://stevelang.xyz</a></p>
 class="uri">https://github.com/Kaizen91</a> <strong>LinkedIn</strong>:
 <a href="https://www.linkedin.com/in/stephen-lang-canada/"
 class="uri">https://www.linkedin.com/in/stephen-lang-canada/</a></p>
-</div>
 <table>
 <colgroup>
-<col style="width: 47%" />
-<col style="width: 52%" />
+<col style="width: 22%" />
+<col style="width: 25%" />
+<col style="width: 21%" />
+<col style="width: 31%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Technical Skills</strong></th>
-<th><strong>Non Technical Skills</strong></th>
+<th><strong>Software Development</strong></th>
+<th><strong>Data Engineering Tools</strong></th>
+<th><strong>DevOps Tools</strong></th>
+<th><strong>Soft Skills</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Google Cloud Platform</td>
-<td>Spanish / English</td>
+<td>-SQL</td>
+<td>-ETL / ELT</td>
+<td>-Google Cloud Platform</td>
+<td>-Spanish / English</td>
 </tr>
 <tr class="even">
-<td>SQL (ETL / ELT), NoSQL</td>
-<td>Project Management (Kanban, Aglie)</td>
+<td>-Python</td>
+<td>-OLAP / OLTP</td>
+<td>-Terraform</td>
+<td>-Project Management (Kanban, Agile)</td>
 </tr>
 <tr class="odd">
-<td>Python (PySpark, Pandas, Django), R, C</td>
-<td>Ability to train both technical and non technical audiences</td>
+<td>-R</td>
+<td>-Spark / Hadoop</td>
+<td>-Linux</td>
+<td>-Ability to train both technical and non technical audiences</td>
 </tr>
 <tr class="even">
-<td>Solution Architecture</td>
-<td>MS Office</td>
-</tr>
-<tr class="odd">
-<td>Git</td>
+<td>-Continuous Integration / Continuous Deployment</td>
+<td>-BigQuery, Cloud Storage, Pub/Sub, Dataproc</td>
+<td>-Cloud Computing generally</td>
 <td></td>
 </tr>
-<tr class="even">
-<td>Linux</td>
-<td></td>
-</tr>
 <tr class="odd">
-<td>Continuous Integration / Continuous Deployment</td>
+<td>-Git</td>
+<td>-DBT</td>
+<td>-Docker</td>
 <td></td>
 </tr>
 </tbody>
@@ -56,15 +60,13 @@ class="uri">https://www.linkedin.com/in/stephen-lang-canada/</a></p>
 <h2 id="work-experience">Work Experience</h2>
 <p><strong>Data Engineer Manager</strong> Scotiabank 11.2020 -
 10.2023</p>
-<p>I managed a team of engineers working across 4 countries building ELT
-pipelines to standardize the bank’s data which ultimately will lead to
-millions in saved dollars due to avoiding fines and insights into
-customers<br />
-I documented and registered dozens of systems in our Data Governance
-tool (Collibra)<br />
-Provided training on GCP, and cloud computing in general, to several
-teams and gave a presentation to senior management in preparation for
-the bank to move to GCP</p>
+<p>I was the team lead for a team of data engineers building ETL
+pipelines to produce standardized data sets on a project spanning 4
+countries. We worked using Pyspark to build an ETL pipeline to
+standardize the bank’s data. I handled several Data Quality and
+remediation initiatives. I provided training to several teams on GCP and
+cloud computing in general. I handled Data Governance activities for
+dozens of systems.</p>
 <p><strong>Professional Services Consultant</strong> Delbridge Solutions
 03.2019 - 11.2020</p>
 <p>Built ETL processes using SQL stored procedures, Bash Scripts, APIs,
@@ -96,6 +98,25 @@ Configuring taxation for clients with employees in multiple states</p>
 <li>Google Cloud Certified Professional Cloud Architect</li>
 <li>Google Cloud Certified Associate Cloud Engineer</li>
 </ul>
+<h2 id="projects">Projects</h2>
+<p><strong>Canadian Housing Market Pipeline</strong></p>
+<p><a href="https://github.com/Kaizen91/spark-housing-market-canada"
+class="uri">https://github.com/Kaizen91/spark-housing-market-canada</a></p>
+<p>An ETL project using canadian housing data to demonstrate knowledge
+of Spark, Terraform, and GCP (Dataproc, Cloud Storage, BigQuery). The
+main.tf terraform file will create all the infrastructure needed for
+this pipeline: a Google Cloud Storage bucket, a Dataproc cluster, a
+Dataproc job, and a BigQuery dataset. It will also upload the source csv
+file and the transform.py script to the Google Cloud Storage bucket, so
+that they can be accessed by the Dataproc Pyspark Job running on the
+Dataproc cluster.</p>
+<p><strong>GCP Streaming Pipeline with Cloud Run</strong></p>
+<p><a href="https://github.com/Kaizen91/gcp-stream-cloud-run"
+class="uri">https://github.com/Kaizen91/gcp-stream-cloud-run</a></p>
+<p>This is an ETL project using GCP (Pub/Sub, Docker, Cloud Run, and
+BigQuery) to stream simulated telemetry data. This set up would be good
+for any pipeline where you need to do light weight transformations on
+messages before storing them.</p>
 <h2 id="education">Education</h2>
 <h4 id="carleton-university-2011---2015">Carleton University 2011 -
 2015</h4>
